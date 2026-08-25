@@ -17,7 +17,10 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ff8a3fb-0073-4b22-b752-64aaf65c61e8" name="更改" comment="" />
+    <list default="true" id="3ff8a3fb-0073-4b22-b752-64aaf65c61e8" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NineTailedFox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NineTailedFox/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NineTailedFox.Atomic.AppKit/AppInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NineTailedFox.Atomic.AppKit/AppInfo.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +30,12 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -111,8 +120,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "git.auto.fetch.suggestion.counter": "1",
+    "git-widget-placeholder": "develop",
+    "git.auto.fetch.suggestion.counter": "2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -275,7 +284,7 @@
       <workItem from="1787637391300" duration="319000" />
       <workItem from="1787637731808" duration="250000" />
       <workItem from="1787638003287" duration="793000" />
-      <workItem from="1787639197130" duration="920000" />
+      <workItem from="1787639197130" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <option name="closed" value="true" />
@@ -293,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787639833576</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试1">
+      <option name="closed" value="true" />
+      <created>1787640219769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1787640219769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +323,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -316,7 +345,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="初始化仓库" />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="测试1" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
