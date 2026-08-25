@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TargetFramework>net10.0</TargetFramework>
+		<AssemblyVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</AssemblyVersion>
+		<FileVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</FileVersion>
+		<Version>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</Version>
+		<Title>NineTailedFox.BatchImageFormatConversion.Application</Title>
+		<Authors>arrayListOf</Authors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Copyright>arrayListOf</Copyright>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<NeutralLanguage>zh-Hans</NeutralLanguage>
+		<IsPackable>true</IsPackable>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\arrayListOf.snk</AssemblyOriginatorKeyFile>
+		<PublicSign>true</PublicSign>
+		<PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+		<OutputType>Exe</OutputType>
+		<PackageIcon>arrayListOf.jpg</PackageIcon>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\arrayListOf.jpg">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+			<Link>arrayListOf.jpg</Link>
+		</None>
+		<None Include="..\arrayListOf.snk">
+			<Link>arrayListOf.snk</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\NineTailedFox.Atomic.AppKit\NineTailedFox.Atomic.AppKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.ConfigKit\NineTailedFox.Atomic.ConfigKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.Extensions\NineTailedFox.Atomic.Extensions.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.LoggerKit\NineTailedFox.Atomic.LoggerKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.NioKit\NineTailedFox.Atomic.NioKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.TimeKit\NineTailedFox.Atomic.TimeKit.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommandLineParser" Version="2.9.1" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="10.0.11" />
+	</ItemGroup>
+
+</Project>

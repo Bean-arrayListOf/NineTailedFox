@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TargetFramework>net10.0</TargetFramework>
+		<AssemblyVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</AssemblyVersion>
+		<FileVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</FileVersion>
+		<Version>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</Version>
+		<Title>NineTailedFox.Atomic.ConfigKit</Title>
+		<Authors>arrayListOf</Authors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Copyright>arrayListOf</Copyright>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<NeutralLanguage>zh-Hans</NeutralLanguage>
+		<IsPackable>true</IsPackable>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\arrayListOf.snk</AssemblyOriginatorKeyFile>
+		<PublicSign>true</PublicSign>
+		<PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+		<PackageIcon>arrayListOf.jpg</PackageIcon>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<Optimize>false</Optimize>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\arrayListOf.jpg">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+			<Link>arrayListOf.jpg</Link>
+		</None>
+		<None Include="..\arrayListOf.snk">
+			<Link>arrayListOf.snk</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NineTailedFox.Atomic.AppKit\NineTailedFox.Atomic.AppKit.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="DotNetEnv" Version="3.2.0" />
+	  <PackageReference Include="Hocon.Extensions.Configuration" Version="2.0.4" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="10.0.11" />
+	  <PackageReference Include="Tomlyn.Extensions.Configuration" Version="2.0.0" />
+	</ItemGroup>
+
+</Project>

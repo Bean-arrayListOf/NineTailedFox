@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<TargetFramework>net10.0</TargetFramework>
+		<AssemblyVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</AssemblyVersion>
+		<FileVersion>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</FileVersion>
+		<Version>$([System.DateTime]::Now.ToString('yy.MM.dd.HH'))</Version>
+		<VersionSuffix>Test.$([System.DateTime]::Now.ToString('mm'))</VersionSuffix>
+		<OutputType>Exe</OutputType>
+		<Title>NineTailedFox.Canary</Title>
+		<Authors>arrayListOf</Authors>
+		<Copyright>arrayListOf</Copyright>
+		<PublicSign>true</PublicSign>
+		<AssemblyOriginatorKeyFile>..\arrayListOf.snk</AssemblyOriginatorKeyFile>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<SignAssembly>true</SignAssembly>
+		<PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+		<RootNamespace>NineTailedFox.Canary</RootNamespace>
+		<PackageIcon>arrayListOf.jpg</PackageIcon>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="NUnit.Framework" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\arrayListOf.jpg">
+			<Pack>True</Pack>
+			<Link>arrayListOf.jpg</Link>
+		</None>
+		<None Include="..\arrayListOf.snk">
+			<Link>arrayListOf.snk</Link>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\NineTailedFox.Atomic.AppKit\NineTailedFox.Atomic.AppKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.BootKit\NineTailedFox.Atomic.BootKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.Extensions\NineTailedFox.Atomic.Extensions.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.LangKit\NineTailedFox.Atomic.LangKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.LoggerKit\NineTailedFox.Atomic.LoggerKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.NioKit\NineTailedFox.Atomic.NioKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.ProteusKV.Core\NineTailedFox.Atomic.ProteusKV.Core.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.ProteusKV.Engine.DuckDb\NineTailedFox.Atomic.ProteusKV.Engine.DuckDb.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.ProteusKV.Engine.Sqlite\NineTailedFox.Atomic.ProteusKV.Engine.Sqlite.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.ProteusKV.Engine.TileDb\NineTailedFox.Atomic.ProteusKV.Engine.TileDb.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Atomic.TimeKit\NineTailedFox.Atomic.TimeKit.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.BatchImageFormatConversion.Application\NineTailedFox.BatchImageFormatConversion.Application.csproj" />
+	  <ProjectReference Include="..\NineTailedFox.Mods.ModLoader\NineTailedFox.Mods.ModLoader.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="coverlet.collector" Version="10.0.1">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="HDF5-CSharp" Version="1.19.1" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="10.0.11" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
+	  <PackageReference Include="NUnit" Version="4.6.1" />
+	  <PackageReference Include="NUnit.Analyzers" Version="4.14.0">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+	  <PackageReference Include="Serilog" Version="4.4.0" />
+	  <PackageReference Include="Serilog.Expressions" Version="5.0.0" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+	  <PackageReference Include="SharpPhysFS" Version="1.0.0" />
+	  <PackageReference Include="System.IO.Abstractions" Version="22.2.0" />
+	</ItemGroup>
+
+</Project>
