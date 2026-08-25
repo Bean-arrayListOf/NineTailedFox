@@ -26,7 +26,6 @@ namespace NineTailedFox.Canary
 
 			var log = Log.ForContext<Test1>();
 			
-			
 			foreach (var i in Enumerable.Range(0,10))
 			{
 				log.Information("[{0}/{1}]: {2}",i,10,RandomKit.GenerateRandomBool());
