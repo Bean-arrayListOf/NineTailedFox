@@ -29,12 +29,13 @@ namespace NineTailedFox.Atomic.AppKit
 
 		private static IFileProvider GetVfs(string basePath)
 		{
-			if (!Directory.Exists(basePath))
+			var path = Path.GetFullPath(basePath);
+			if (!Directory.Exists(path))
 			{
-				Directory.CreateDirectory(basePath);
+				Directory.CreateDirectory(path);
 			}
 
-			return new PhysicalFileProvider(basePath,ExclusionFilters.None);
+			return new PhysicalFileProvider(path,ExclusionFilters.None);
 		}
 	}
 }
