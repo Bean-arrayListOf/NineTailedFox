@@ -97,12 +97,7 @@ namespace NineTailedFox.Atomic.Extensions
 				return true;
 			}
 
-			if (args.Any())
-			{
-				return true;
-			}
-
-			return false;
+			return args.Length != 0;
 		}
 
 		public static bool IsNotEmpty<T>(this T[] args)
