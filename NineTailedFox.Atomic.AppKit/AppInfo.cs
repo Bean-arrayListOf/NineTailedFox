@@ -34,7 +34,6 @@ namespace NineTailedFox.Atomic.AppKit
 			{
 				Directory.CreateDirectory(path);
 			}
-
 			return new PhysicalFileProvider(path,ExclusionFilters.None);
 		}
 	}

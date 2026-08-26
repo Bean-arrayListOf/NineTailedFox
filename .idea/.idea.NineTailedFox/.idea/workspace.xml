@@ -18,8 +18,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ff8a3fb-0073-4b22-b752-64aaf65c61e8" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NineTailedFox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NineTailedFox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NineTailedFox.Atomic.AppKit/AppInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NineTailedFox.Atomic.AppKit/AppInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +286,8 @@
       <workItem from="1787637731808" duration="250000" />
       <workItem from="1787638003287" duration="793000" />
       <workItem from="1787639197130" duration="3640000" />
-      <workItem from="1787666576217" duration="3180000" />
+      <workItem from="1787666576217" duration="4884000" />
+      <workItem from="1787749271461" duration="1075000" />
     </task>
     <task id="LOCAL-00001" summary="初始化仓库">
       <option name="closed" value="true" />
@@ -327,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787667207880</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="README.md 更新">
+      <option name="closed" value="true" />
+      <created>1787669834198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1787669834198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +375,8 @@
     <MESSAGE value="测试1" />
     <MESSAGE value="更改 GetVfs 逻辑" />
     <MESSAGE value="更新 README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新 README.md" />
+    <MESSAGE value="README.md 更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md 更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
